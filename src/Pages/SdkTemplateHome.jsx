@@ -11,7 +11,7 @@ function SdkTemplateHome() {
         <TemplateCard title={"Template 1"} description={'Default Recorder'} templateConfig={TemplateConfig.template1}/>
         <TemplateCard title={"Template 2"} description={'Draggable Webcam'} templateConfig={TemplateConfig.template2}/>
         <TemplateCard title={"Template 3"} description={'Screen and Webcam without webcam preview while recording'} templateConfig={TemplateConfig.template3}/>
-        {/* <TemplateCard title={"Template 4"} templateConfig={TemplateConfig.template4}/> */}
+        <TemplateCard title={"Template 4"} description={'Split Screen Recorder[WIP]'} templateConfig={TemplateConfig.template3} disableRecorder={true}/>
       </div>
     </StyledHomePage>
   )

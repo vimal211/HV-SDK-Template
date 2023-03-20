@@ -4,7 +4,7 @@ import { StyledTemplateCard } from './TemplateCard.style';
 import "@hippovideo/video-sdk/app/hv_recorder.css";
 
 
-function TemplateCard({ title,description, templateConfig }) {
+function TemplateCard({ title, description, templateConfig , disableRecorder}) {
 
   let initializeOptions = {
     token: '9faa3498-371c-4c6e-97fb-84d6176e766f1663916871',
@@ -40,7 +40,7 @@ function TemplateCard({ title,description, templateConfig }) {
     <StyledTemplateCard>
         <div className='template_title'>{title}</div>
         <div className='template_description'>{description}</div>
-        <div onClick={intitalizeRcorder} className='template_record_btn'>Open Recorder</div>
+        <div onClick={disableRecorder ? ()=>{} :() => {intitalizeRcorder()}} className='template_record_btn'>Open Recorder</div>
     </StyledTemplateCard>
   )
 }
