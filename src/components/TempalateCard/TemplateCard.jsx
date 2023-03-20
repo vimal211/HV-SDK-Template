@@ -1,7 +1,7 @@
 import React from 'react';
 import { initialize,RecorderWidget } from "@hippovideo/video-sdk";
 import { StyledTemplateCard } from './TemplateCard.style';
-import "@hippovideo/video-sdk/app/hv_recorder.css";
+// import "@hippovideo/video-sdk/app/hv_recorder.css";
 
 
 function TemplateCard({ title,description, templateConfig }) {
