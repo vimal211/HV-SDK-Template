@@ -1,7 +1,7 @@
 import React from 'react';
 import { initialize,RecorderWidget } from "@hippovideo/video-sdk";
 import { StyledTemplateCard } from './TemplateCard.style';
-// import "@hippovideo/video-sdk/app/hv_recorder.css";
+import "@hippovideo/video-sdk/app/hv_recorder.css";
 
 
 function TemplateCard({ title,description, templateConfig }) {
@@ -17,7 +17,7 @@ function TemplateCard({ title,description, templateConfig }) {
   
       RecorderWidget.create(success.key, recorderWidgetConfig)
       .then((recorder) => {
-  
+  recorder.open()
         recorder.on("record_details", (data) => {
           console.info('Recording Data : ', data);
         });
@@ -34,7 +34,7 @@ function TemplateCard({ title,description, templateConfig }) {
 
   const intitalizeRcorder = () => {
     console.log(templateConfig);
-    // initialize(initializeOptions, onVideoSdkInitialize)
+    initialize(initializeOptions, onVideoSdkInitialize)
   }
   return (
     <StyledTemplateCard>
