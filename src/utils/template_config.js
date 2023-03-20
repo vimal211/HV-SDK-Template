@@ -15,7 +15,7 @@ const defualtwidgetConfig = {
         display_surface:'monitor',
         mirror_webcam: false,
         asset_type: false,
-        drag_enabled:false,
+        drag_enabled:true,
         hide_webcam_preview:false,
     },
     advanced_settings: {
@@ -51,7 +51,7 @@ const template2Config = {
         display_surface:'monitor',
         mirror_webcam: false,
         asset_type: false,
-        drag_enabled:true,
+        drag_enabled:false,
         hide_webcam_preview:false,
     },
     advanced_settings: {
